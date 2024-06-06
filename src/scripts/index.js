@@ -3,9 +3,11 @@ import '../styles/main.css';
 import '../styles/tablet.css';
 import '../styles/desktop.css';
 import '../styles/templates.css';
-import 'remixicon/fonts/remixicon.css';
 import App from './views/app';
 import swRegister from './utils/sw-register.js';
+// Lazy Loading
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const navBarMenu = document.querySelector('#nav-menu');
 const navBarMenuLinks = document.querySelector('#nav-links-menu');
@@ -17,6 +19,7 @@ const app = new App({
   content: contentContainer,
 });
 
+// On scroll
 window.addEventListener('hashchange', () => {
   app.renderPage();
 });

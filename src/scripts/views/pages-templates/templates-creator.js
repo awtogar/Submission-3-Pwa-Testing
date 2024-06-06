@@ -2,7 +2,9 @@ import CONFIG from '../../globals/config';
 
 const createItemListTemplate = (restaurant) => `
     <article id="${restaurant.id}" class="card-item">
-        <img class="item-cover" src="${CONFIG.BASE_IMAGE_URL}/${restaurant.pictureId}" alt="Image of restaurant ${restaurant.name}">
+        <img class="item-cover lazyload" data-src="${CONFIG.BASE_IMAGE_URL}/${restaurant.pictureId}" 
+            alt="Image of restaurant ${restaurant.name}" 
+        />
         <div class="item-header">
             <p class="header-city">${restaurant.city}</p>
             <div class="header-rating">
