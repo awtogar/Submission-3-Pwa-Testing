@@ -143,7 +143,7 @@ html {
 }
 
 .hero-content{
-  background-image: radial-gradient(circle, rgba(255,255,255,0.004885993485342022) 1%, rgba(0,0,0,0.7866449511400652) 100%),url('./images/hero-image_3-large.jpg');
+  background-image: radial-gradient(circle, rgba(255,255,255,0.004885993485342022) 1%, rgba(0,0,0,0.7866449511400652) 100%),url('./images/hero-image_3-small.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -322,7 +322,7 @@ footer {
 
 .info-logo {
     margin-bottom: 10px;
-    background: url(../public/images/resto/Typemark.svg);
+    background: url('./images/resto/Typemark.svg');
     fill: var(--color_1);
     height: 44px;
     width: auto;

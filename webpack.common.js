@@ -56,6 +56,10 @@ module.exports = {
           from: path.resolve(__dirname, 'src/public/images/icons/'),
           to: path.resolve(__dirname, 'dist/images/icons/'),
         },
+        {
+          from: path.resolve(__dirname, 'src/public/images/resto/'),
+          to: path.resolve(__dirname, 'dist/images/resto/'),
+        },
       ],
     }),
     new WorkboxWebpackPlugin.GenerateSW({
