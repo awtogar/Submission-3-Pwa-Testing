@@ -10,7 +10,8 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "e2e": "codeceptjs run --steps",
-    "build-image": "node sharp.js"
+    "build-image": "node sharp.js",
+    "build-final": "concurrently \"npm run build\" \"npm run build-images\""
   },
   "keywords": [],
   "author": "awtogarr <d2024y042@dicoding.org>",
@@ -25,6 +26,7 @@
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
     "codeceptjs": "^3.6.2",
+    "concurrently": "^8.2.2",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "eslint": "^9.3.0",
